@@ -1,35 +1,46 @@
----
-name: Feature request
-about: Request a Feature
-title: "[FR] (feature request title)"
-labels: 'T: Feature Request'
-assignees: ''
+name: ✨ Request a feature
+description: Request a new Marlin Firmware feature
+title: "[FR] (feature summary)"
+issue_body: true
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Do you want to ask a question? Are you looking for support? Please use one of the [support links](https://github.com/MarlinFirmware/Marlin/issues/new/choose).
 
----
+  - type: markdown
+    attributes:
+      value: >
+        **Thank you for requesting a new Marlin Firmware feature!**
 
-<!--
+        ## Before Requesting a Feature
 
-Have you read Marlin's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/MarlinFirmware/Marlin/blob/master/.github/code_of_conduct.md
+        - Read and understand Marlin's [Code of Conduct](https://github.com/MarlinFirmware/Marlin/blob/master/.github/code_of_conduct.md). You are expected to comply with it, including treating everyone with respect.
 
-Do you want to ask a question? Are you looking for support? Please don't post here. Instead please use one of the support links at https://github.com/MarlinFirmware/Marlin/issues/new/choose
+        - Check the latest [`bugfix-2.0.x` branch](https://github.com/MarlinFirmware/Marlin/archive/bugfix-2.0.x.zip) to see if the feature already exists.
 
-Before filing an issue be sure to test the "bugfix" branches to see whether the issue has been resolved.
+        - Before you proceed with your request, please consider if it is necessary to make it into a firmware feature, or if it may be better suited for a slicer or host feature.
 
--->
+  - type: textarea
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: A clear description of the problem (e.g., "I need X but Marlin can't do it [...]").
 
-### Description
+  - type: textarea
+    attributes:
+      label: Are you looking for hardware support?
+      description: Tell us the printer, board, or peripheral that needs support.
 
-<!-- Description of the requested feature -->
+  - type: textarea
+    attributes:
+      label: Describe the feature you want
+      description: A clear description of the feature and how you think it should work.
+    validations:
+      required: true
 
-### Feature Workflow
+  - type: markdown
+    attributes:
+      value: >
+        **Additional context**
 
-<!-- Please describe the feature's behavior, user interaction, etc. -->
-
-1. [First Action]
-2. [Second Action]
-3. [and so on...]
-
-#### Additional Information
-
-* Provide pictures or links that demonstrate a similar feature or concept.
-* See [How Can I Contribute](#how-can-i-contribute) for additional guidelines.
+        Add any other context or screenshots about the feature request here.
